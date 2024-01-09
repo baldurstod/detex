@@ -1,0 +1,1 @@
+emcc -Oz -s ALLOW_MEMORY_GROWTH=1 -o detex.wasm -s EXTRA_EXPORTED_RUNTIME_METHODS="['cwrap']" -s WASM=1 wasm.c bits.c bptc-tables.c clamp.c convert.c dds.c decompress-bc.c decompress-bptc-float.c decompress-bptc.c decompress-eac.c decompress-etc.c decompress-rgtc.c division-tables.c file-info.c half-float.c hdr.c ktx.c misc.c raw.c texture.c
